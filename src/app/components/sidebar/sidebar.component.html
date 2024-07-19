@@ -1,0 +1,40 @@
+<div class="wrapper">
+  <div class="pre-title animate__animated animate__fadeInUp animation-1">
+    Hola mi nombre es
+ </div>
+  <h1 #asTitle class="tittle animate__animated animate__fadeInUp animation-2"></h1>
+  <h2 class="sub-title animate__animated animate__fadeInUp animation-3">
+    Soy desarrollador Web 
+</h2>
+  <p class="description animate__animated animate__fadeInUp animation-4">
+    Soy un desarrollador de software especializado en diseñar interfaces de usuario atractivas y funcionales.
+     Utilizo tecnologías Front-end como Angular y React, junto con HTML, CSS, JavaScript y TypeScript. 
+     También tengo habilidades en desarrollo Back-end con Java y Spring Boot y manejo de bases de datos con MySQL y PostgreSQL.
+  </p>
+  <hr>
+  <div class="video-wrapper animate__animated animate__fadeInUp animation-5">
+    <iframe 
+         width="100%" 
+         height="315" 
+         src="https://www.youtube.com/embed/a6E5pzst2YE?si=M3BeV7IzKQllgw7T" 
+         title="YouTube video player"
+         frameborder="0" 
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+         referrerpolicy="strict-origin-when-cross-origin" 
+         allowfullscreen>
+    </iframe>
+  </div>  
+
+  <div class="link-wrapper animate__animated animate__fadeInUp animation-6">
+    <hr>
+    <div class="links d-flex flex-wrap">
+      <div class="block col-12 col-lg-4" *ngFor="let linkObj of links">
+        <a [href]="linkObj.link" target="_blank">
+          <div class="block-in">
+            <span [innerHTML]="linkObj.icon"></span>
+           </div>
+        </a>        
+      </div>
+    </div>
+  </div>  
+</div>

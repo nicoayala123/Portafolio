@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --color-1: #0096c7;
+    --color-2: #ffd166; 
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Cabin', sans-serifs;
+    background-color:  var(--color-1);
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+a, a:visited, a:hover, a:link{
+color: white;
+}
+
+
+
+@for $i from 1 through 100 {
+    .animation-#{$i} {
+        animation-delay: #{$i /10};
+    }
+}
+
+hr {
+    border-color: white;
+    margin: 1rem 0;
+}
